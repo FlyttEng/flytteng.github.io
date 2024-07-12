@@ -283,10 +283,14 @@ footer {
         align-items: center;
     }
 
-    .image-gallery {
-        flex-wrap: wrap;
-        gap: var(--padding);
-        justify-content: center;
+    .gallery-image-1, .gallery-image-3, .gallery-image-5 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .gallery-image-2, .gallery-image-4 {
+        width: 200px;
+        height: 200px;
     }
 
     .steps {

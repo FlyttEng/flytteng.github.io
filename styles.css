@@ -144,6 +144,20 @@ nav {
 .step {
     max-width: 300px;
     text-align: left;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+.step:nth-child(1) {
+    background-color: #E3F2FD; /* Light blue */
+}
+
+.step:nth-child(2) {
+    background-color: #E8F5E9; /* Light green */
+}
+
+.step:nth-child(3) {
+    background-color: #FFF3E0; /* Light orange */
 }
 
 .step h3 {
@@ -187,6 +201,11 @@ nav {
     text-align: center;
     font-size: 2em;
     margin-bottom: 40px;
+}
+
+.faq-item {
+    max-width: 700px;
+    margin: 0 auto 20px;
 }
 
 .faq-item h3 {

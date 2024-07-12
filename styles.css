@@ -7,6 +7,7 @@
     --text-color: #000;
     --text-color-light: #666;
     --background-color: #f8f8f8;
+    --header-footer-bg: #fff; /* White background for nav */
     --footer-bg: #F4F5F9;
     --border-color: #ddd;
     --font-family: Arial, sans-serif;
@@ -30,31 +31,44 @@ body {
     padding: 0 var(--padding);
 }
 
-header, section, footer {
-    padding: var(--padding) 0;
+/* Navigation Bar */
+nav {
+    background-color: var(--header-footer-bg);
+    color: var(--text-color);
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* Header */
-header {
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--header-footer-bg);
+    padding: 10px 20px;
 }
 
-header .logo img {
-    height: 40px;
+nav .logo a img {
+    height: 40px; /* Adjust the height as needed */
 }
 
-nav {
+nav .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: var(--padding);
 }
 
-.nav-link {
-    text-decoration: none;
+nav .nav-links ul li {
+    margin-left: 20px;
+}
+
+nav .nav-links ul li a {
     color: var(--text-color);
-    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .nav-links ul li a:hover {
+    text-decoration: underline;
 }
 
 .nav-link.btn {
@@ -264,12 +278,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
+    nav .container {
         flex-direction: column;
         align-items: center;
     }

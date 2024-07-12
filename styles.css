@@ -283,6 +283,10 @@ footer {
         align-items: center;
     }
 
+    nav .nav-links {
+        display: none;
+    }
+
     .gallery-image-1, .gallery-image-3, .gallery-image-5 {
         width: 100%;
         height: 300px;

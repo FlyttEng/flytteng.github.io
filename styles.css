@@ -36,7 +36,6 @@ nav {
     background-color: var(--header-footer-bg);
     color: var(--text-color);
     width: 100%;
-    border-bottom: 1px solid var(--border-color);
 }
 
 nav .container {
@@ -86,6 +85,7 @@ nav .nav-links ul li a:hover {
 .hero {
     text-align: center;
     padding: 60px 0;
+    background-color: var(--header-footer-bg);
 }
 
 .hero h1 {
@@ -142,6 +142,7 @@ nav .nav-links ul li a:hover {
 .how-it-works {
     text-align: center;
     padding: 60px 0;
+    background-color: var(--header-footer-bg);
 }
 
 .how-it-works h2 {
@@ -209,6 +210,7 @@ nav .nav-links ul li a:hover {
 /* FAQ Section */
 .faq {
     padding: 60px 0;
+    background-color: var(--header-footer-bg);
 }
 
 .faq h2 {
@@ -246,7 +248,6 @@ nav .nav-links ul li a:hover {
 /* Footer */
 footer {
     background-color: var(--footer-bg);
-    border-top: 1px solid var(--border-color);
     text-align: center;
     padding: 20px 0;
 }

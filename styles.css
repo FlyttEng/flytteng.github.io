@@ -8,7 +8,7 @@
     --background-color: #fff;
     --footer-bg: #F4F5F9;
     --font-family: 'Inter', -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    --heading-font-family: 'Poppins', 'Inter', -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    --heading-font-family: 'Poppins', -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     --max-container-width: 1000px;
     --padding: 20px;
     --small-border-radius: 8px;
@@ -18,15 +18,19 @@
 
 /* Global Styles */
 body {
-    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color);
 }
 
+p, a {
+    font-family: var(--font-family);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
+    font-weight: 600;
 }
 
 .container {
@@ -62,6 +66,7 @@ nav .nav-links ul li a {
     color: var(--primary-text-color);
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
 }
 
 nav .nav-links ul li a:hover {
@@ -123,7 +128,7 @@ nav .nav-links ul li a:hover {
     padding: 10px 20px;
     border-radius: var(--small-border-radius);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .hero .btn:hover {
@@ -267,7 +272,7 @@ footer {
 .footer-social a {
     text-decoration: none;
     color: var(--primary-text-color);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .footer-links a:hover,

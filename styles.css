@@ -8,7 +8,7 @@
     --secondary-text-color: #8F99AC;
     --background-color: #fff;
     --footer-bg: #F4F5F9;
-    --font-family: Arial, sans-serif;
+    --font-family: 'Inter', -apple-system, "system-ui", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     --max-container-width: 1000px;
     --padding: 20px;
     --small-border-radius: 8px;
@@ -33,15 +33,10 @@ body {
 
 /* Navigation Bar */
 nav {
-    color: var(--primary-text-color);
-    width: 100%;
-}
-
-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin-top: 30px;
 }
 
 nav .logo a img {
@@ -243,7 +238,8 @@ nav .nav-links ul li a:hover {
 
 /* Footer */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     padding: 30px;
     margin-bottom: 30px;
     background-color: var(--footer-bg);
@@ -257,7 +253,7 @@ footer {
 
 .footer-links,
 .footer-social {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: var(--padding);
     margin-bottom: 10px;

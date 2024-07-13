@@ -1,17 +1,15 @@
 /* CSS Variables */
 :root {
-    --primary-color: #007BFF;
-    --primary-color-dark: #0056b3;
+    --action-text-color: #253CC5;
+    --action-text-color-dark: #16257F;
     --secondary-color: #28A745;
     --accent-color: #FFC107;
-    --text-color: #000;
-    --text-color-light: #666;
-    --background-color: #f8f8f8;
-    --header-footer-bg: #fff; /* White background for nav */
+    --primary-text-color: #000;
+    --secondary-text-color: #8F99AC;
+    --background-color: #fff;
     --footer-bg: #F4F5F9;
-    --border-color: #ddd;
     --font-family: Arial, sans-serif;
-    --max-container-width: 1200px;
+    --max-container-width: 1000px;
     --padding: 20px;
     --small-border-radius: 8px;
     --medium-border-radius: 16px;
@@ -35,8 +33,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: var(--header-footer-bg);
-    color: var(--text-color);
+    color: var(--primary-text-color);
     width: 100%;
 }
 
@@ -63,7 +60,7 @@ nav .nav-links ul li {
 }
 
 nav .nav-links ul li a {
-    color: var(--text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     font-size: 18px;
 }
@@ -73,21 +70,20 @@ nav .nav-links ul li a:hover {
 }
 
 .nav-link.btn {
-    background-color: var(--primary-color);
+    background-color: var(--action-text-color);
     color: #fff;  /* Ensure the button text is white */
     padding: 10px 20px;
     border-radius: var(--small-border-radius);
 }
 
 .nav-link.btn:hover {
-    background-color: var(--primary-color-dark);
+    background-color: var(--action-text-color-dark);
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 0;
-    background-color: var(--header-footer-bg);
+    padding: 30px 0;
 }
 
 .hero h1 {
@@ -97,7 +93,7 @@ nav .nav-links ul li a:hover {
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 40px;
+    margin: 30px 0;
 }
 
 .image-gallery {
@@ -123,7 +119,7 @@ nav .nav-links ul li a:hover {
 }
 
 .hero .btn {
-    background-color: var(--primary-color);
+    background-color: var(--action-text-color);
     color: #fff;  /* Ensure the button text is white */
     padding: 10px 20px;
     border-radius: var(--small-border-radius);
@@ -132,19 +128,18 @@ nav .nav-links ul li a:hover {
 }
 
 .hero .btn:hover {
-    background-color: var(--primary-color-dark);
+    background-color: var(--action-text-color-dark);
 }
 
 .small-text {
-    font-size: 0.9em;
-    color: var(--text-color-light);
+    font-size: 1em !important;
+    color: var(--secondary-text-color);
 }
 
 /* How It Works Section */
 .how-it-works {
     text-align: center;
-    padding: 60px 0;
-    background-color: var(--header-footer-bg);
+    padding: 30px 0;
 }
 
 .how-it-works h2 {
@@ -154,12 +149,12 @@ nav .nav-links ul li a:hover {
 
 .steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: var(--padding);
 }
 
 .step {
-    max-width: 300px;
+    width: 30%;
     text-align: left;
     padding: var(--padding);
     border-radius: var(--medium-border-radius);
@@ -179,13 +174,13 @@ nav .nav-links ul li a:hover {
 
 .step h3 {
     font-size: 2em;
-    color: var(--header-footer-bg);
-    background-color: var(--primary-color);
+    color: var(--background-color);
+    background-color: var(--action-text-color);
     width: 50px;
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,13 +201,12 @@ nav .nav-links ul li a:hover {
 
 .step p {
     font-size: 1em;
-    color: var(--text-color-light);
+    color: var(--primary-text-color);
 }
 
 /* FAQ Section */
 .faq {
-    padding: 60px 0;
-    background-color: var(--header-footer-bg);
+    padding: 30px 0;
 }
 
 .faq h2 {
@@ -244,18 +238,14 @@ nav .nav-links ul li a:hover {
 
 .faq-item p {
     font-size: 1em;
-    color: var(--text-color-light);
+    color: var(--primary-text-color);
 }
 
 /* Footer */
 footer {
-    background-color: var(--header-footer-bg);
     text-align: center;
-    padding: 20px 0;
-}
-
-.footer {
     padding: 30px;
+    margin-bottom: 30px;
     background-color: var(--footer-bg);
     border-radius: var(--large-border-radius);
 }
@@ -276,13 +266,13 @@ footer {
 .footer-links a,
 .footer-social a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     font-weight: bold;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
-    color: var(--primary-color);
+    color: var(--action-text-color);
 }
 
 /* Responsive Styles */

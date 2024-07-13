@@ -13,7 +13,9 @@
     --font-family: Arial, sans-serif;
     --max-container-width: 1200px;
     --padding: 20px;
-    --border-radius: 5px;
+    --small-border-radius: 8px;
+    --medium-border-radius: 16px;
+    --large-border-radius: 30px;
 }
 
 /* Global Styles */
@@ -74,7 +76,7 @@ nav .nav-links ul li a:hover {
     background-color: var(--primary-color);
     color: #fff;  /* Ensure the button text is white */
     padding: 10px 20px;
-    border-radius: var(--border-radius);
+    border-radius: var(--small-border-radius);
 }
 
 .nav-link.btn:hover {
@@ -107,7 +109,7 @@ nav .nav-links ul li a:hover {
 }
 
 .image-gallery img {
-    border-radius: 10px;
+    border-radius: var(--medium-border-radius);
 }
 
 .gallery-image-1, .gallery-image-3, .gallery-image-5 {
@@ -124,7 +126,7 @@ nav .nav-links ul li a:hover {
     background-color: var(--primary-color);
     color: #fff;  /* Ensure the button text is white */
     padding: 10px 20px;
-    border-radius: var(--border-radius);
+    border-radius: var(--small-border-radius);
     text-decoration: none;
     font-weight: bold;
 }
@@ -160,7 +162,7 @@ nav .nav-links ul li a:hover {
     max-width: 300px;
     text-align: left;
     padding: var(--padding);
-    border-radius: var(--border-radius);
+    border-radius: var(--medium-border-radius);
 }
 
 .step:nth-child(1) {
@@ -247,9 +249,15 @@ nav .nav-links ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--footer-bg);
+    background-color: var(--header-footer-bg);
     text-align: center;
     padding: 20px 0;
+}
+
+.footer {
+    padding: 30px;
+    background-color: var(--footer-bg);
+    border-radius: var(--large-border-radius);
 }
 
 .footer-logo img {

@@ -258,7 +258,6 @@ footer {
 
 .footer-logo img {
     height: 40px;
-    margin-bottom: 20px;
 }
 
 .footer-links,
@@ -370,7 +369,7 @@ p.desktop {
     }
 
     .footer-links {
-        margin-bottom: 40px;
+        margin: 40px 0;
     }
 }
 

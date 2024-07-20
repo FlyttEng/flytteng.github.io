@@ -24,7 +24,7 @@ body {
     background-color: var(--background-color);
 }
 
-p, a {
+p, a, ol, li {
     font-family: var(--font-family);
 }
 

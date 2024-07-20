@@ -266,7 +266,6 @@ footer {
     display: grid;
     justify-content: center;
     gap: var(--padding);
-    margin-bottom: 10px;
 }
 
 .footer-links a,
@@ -368,6 +367,10 @@ p.desktop {
     footer {
         display: block;
         text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 40px;
     }
 }
 
